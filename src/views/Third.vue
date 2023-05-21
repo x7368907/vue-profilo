@@ -5,8 +5,8 @@
             <form>
                
                     <div v-for="(item,index) in List" :key="index">
-                    <label for="name">{{ item.title }}</label>
-                    <input :type="item.name" :name="item.name" v-if="item.title ==='姓名:' || item.title ==='郵件:' || item.title === '電話:'">
+                    <label for="item.name">{{ item.title }}</label>
+                    <input :type="item.type" :name="item.name" v-if="item.isInput">
                     <textarea v-else :name="item.name" :id="item.name" rows="10"></textarea>
                 </div>
                 <button type="submit">提交表單</button>               
@@ -34,19 +34,29 @@ export default {
             List:[
                 {
                     title:'姓名:',
-                    name:'name'
+                    name:'name',
+                    type:'text',
+                    isInput:true,
+                    key:1,
                 },
                 {
                     title:'郵件:',
-                    name:'email'
+                    name:'email',
+                    type:'email',
+                    isInput:true,
+                    key:2,
                 },
                 {
                     title:'電話:',
-                    name:'phone'
+                    name:'phone',
+                    type:'tel',
+                    isInput:true,
+                    key:3
                 },
                 {
                     title:'需求:',
-                    name:'need'
+                    name:'need',
+                    isInput:false,
                 }
             ],
             selfList:[

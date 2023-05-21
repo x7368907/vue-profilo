@@ -6,7 +6,7 @@
             <tr v-for="(item,index) in List" :key="index" style="border-top:2px solid gray ;">
                 <td style="width: 20%;">{{ item.title }}</td>
                 <td style="width: 80% ;">
-                    <template v-if="item.title === '工作經歷' || item.title === '語言'">
+                    <template v-if="item.key === 1">
                        
                           <li  v-for="(job,jobIndex) in item.content" :key="jobIndex" class="num">{{ job.name }}</li>
                                          
@@ -14,12 +14,12 @@
                     <template v-else>
                         {{ item.content }}            
                     </template>
-                    <template v-if="item.title === '前端' || item.title ==='後端'">
+                    <template v-if="item.contentArr === 'img' ">
                         <template v-for="(img,imgIndex) in item.image" :key="imgIndex">
                             <img :src="img.imageUrl" alt="">
                         </template>    
                     </template>
-                    <template v-if="item.title === '開發經驗'">
+                    <template v-if="item.key === 'exp'">
                             <li v-for="(exp,expIndex) in item.main" :key="expIndex">
                                 {{ exp.experience }}
                             </li>
@@ -57,6 +57,7 @@ export default{
                 },
                 {
                     title:'工作經歷',
+                    key:1,
                     content:[
                         {
                             name:'前端工程師'
@@ -71,6 +72,7 @@ export default{
                 },
                 {
                     title:'語言',
+                    key:1,
                     content:[
                         {
                             name:'中文:精通'
@@ -81,6 +83,7 @@ export default{
                 },
                 {
                     title:'前端',
+                    contentArr:'img',
                     image:[
                         {
                             imageUrl:'../../public/images拷貝/icons8-html-5.svg',
@@ -101,6 +104,7 @@ export default{
                 },
                 {
                     title:'後端',
+                    contentArr:'img',
                     image:[
                         {
                             imageUrl:'../../public/images拷貝/icons8-git-480.svg',
@@ -121,6 +125,7 @@ export default{
                 },
                 {
                     title:'開發經驗',
+                    key:'exp',
                     main:[
                         {
                             experience:'活動網站開發'
