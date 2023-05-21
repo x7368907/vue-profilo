@@ -1,6 +1,6 @@
 <template>
   <Animation></Animation>  
- <img class="blue" src="../../public/images拷貝/blueBackground 1.png" alt="">   
+ <img class="blue" src="../../public/images/blueBackground 1.png" alt="">   
 <Header></Header>    
 <main>
 <section class="left">
@@ -12,7 +12,7 @@
     </p>
 </section>
 <section class="right">
-<img class="mypicture" src="../../public/images拷貝/S__67117060.jpg" alt="picture">
+<img class="mypicture" src="../../public/images/S__67117060.jpg" alt="picture">
 </section>
 </main>
 <Footer></Footer>

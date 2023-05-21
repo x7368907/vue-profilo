@@ -31,7 +31,7 @@
         </table>
     </section>
     <section class="picture">
-            <img src="../../public/images拷貝/S__67117061.jpg" alt="">
+            <img src="../../public/images/S__67117061.jpg" alt="">
             <div class="bluerect"></div>
         </section>
 </main>
@@ -86,19 +86,19 @@ export default{
                     contentArr:'img',
                     image:[
                         {
-                            imageUrl:'../../public/images拷貝/icons8-html-5.svg',
+                            imageUrl:'../../public/images/icons8-html-5.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/icons8-css3.svg',
+                            imageUrl:'../../public/images/icons8-css3.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/icons8-javascript.svg',
+                            imageUrl:'../../public/images/icons8-javascript.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/jquery.svg',
+                            imageUrl:'../../public/images/jquery.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/vuejs.svg',
+                            imageUrl:'../../public/images/vuejs.svg',
                         },
                     ]
                 },
@@ -107,19 +107,19 @@ export default{
                     contentArr:'img',
                     image:[
                         {
-                            imageUrl:'../../public/images拷貝/icons8-git-480.svg',
+                            imageUrl:'../../public/images/icons8-git-480.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/node-js-svgrepo-com.svg',
+                            imageUrl:'../../public/images/node-js-svgrepo-com.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/ejs-svgrepo-com.svg',
+                            imageUrl:'../../public/images/ejs-svgrepo-com.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/mysql-svgrepo-com.svg',
+                            imageUrl:'../../public/images/mysql-svgrepo-com.svg',
                         },
                         {
-                            imageUrl:'../../public/images拷貝/mongodb-svgrepo-com.svg',
+                            imageUrl:'../../public/images/mongodb-svgrepo-com.svg',
                         },
                     ]
                 },
